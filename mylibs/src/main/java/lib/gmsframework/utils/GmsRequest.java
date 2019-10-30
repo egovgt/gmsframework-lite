@@ -139,7 +139,7 @@ public class GmsRequest {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            Log.d("asdResponse "+URL, "onResponse: "+response);
+                            Log.d("gmsResponse "+URL, "onResponse: "+response);
                             JSONObject jsonObject = new JSONObject(response);
                             onPostRequest.onSuccess(jsonObject);
                         } catch (JSONException e) {
@@ -167,8 +167,7 @@ public class GmsRequest {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param;
                 param = onPostRequest.requestParam();
-                param.put("lestari_api_key", BuildConfig.api_key);
-                Log.d("asdParams"+URL, "requestParam: "+param);
+                Log.d("gmsParams "+URL, "requestParam: "+param);
                 return param;
             }
 
@@ -198,7 +197,7 @@ public class GmsRequest {
             public void onErrorResponse(VolleyError error) {
                 GmsStatic.showGoTroError(context, error);
                 NetworkResponse networkResponse = error.networkResponse;
-                Log.d("asdResponseFailure ", "onResponse: "+URL);
+                Log.d("gmsResponseFailure ", "onResponse: "+URL);
                 String errorCode = "1012";
                 if (error instanceof NetworkError) {
                     errorCode = "1012";
