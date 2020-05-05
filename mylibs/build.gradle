@@ -28,8 +28,8 @@ android {
     }
     configurations {
         all*.exclude group: 'com.android.support', module: 'support-v4'
-        all*.exclude group: 'com.android.support', module: 'support-annotations'
     }
+//    all*.exclude group: 'com.android.support', module: 'support-annotations'
 }
 
 dependencies {
@@ -57,7 +57,7 @@ dependencies {
     api 'com.android.support:multidex:1.0.2'
     api 'com.wdullaer:materialdatetimepicker:3.5.1'
 //    api 'com.ss.bannerslider:bannerslider:2.0.0'
-    api 'com.github.jkwiecien:EasyImage:2.0.2'
+//    api 'com.github.jkwiecien:EasyImage:2.0.2'
     implementation 'org.jetbrains:annotations-java5:15.0'
 
 
