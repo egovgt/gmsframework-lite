@@ -4,11 +4,11 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.egovgt'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.8"
         multiDexEnabled true
@@ -40,7 +40,7 @@ dependencies {
     }
 
 
-    api 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -49,15 +49,16 @@ dependencies {
     api 'com.squareup.picasso:picasso:2.5.2'
     api 'com.mcxiaoke.volley:library:1.0.19'
     api 'cat.ereza:customactivityoncrash:2.2.0'
-    api 'com.android.support:design:27.1.0'
-    api 'com.android.support:cardview-v7:27.1.0'
+    api 'com.android.support:design:28.0.0'
+    api 'com.android.support:cardview-v7:28.0.0'
     api 'com.airbnb.android:lottie:2.5.0'
-    androidTestCompile 'com.android.support:support-annotations:27.1.0'
+    api 'com.android.support:support-annotations:28.0.0'
     api 'com.google.code.gson:gson:2.8.5'
     api 'com.android.support:multidex:1.0.2'
     api 'com.wdullaer:materialdatetimepicker:3.5.1'
 //    api 'com.ss.bannerslider:bannerslider:2.0.0'
     api 'com.github.jkwiecien:EasyImage:2.0.2'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 
 
 //    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -41,7 +41,7 @@ import static lib.gmsframework.utils.GmsConstant.SP_NOTATION;
  * Created by root on 3/9/18.
  */
 
-public class GmsStatic {
+public class GmsUtil {
 
     public static SharedPreferences sp;
 
@@ -244,7 +244,7 @@ public class GmsStatic {
         }
     }
 
-    public static void showGoTroError(Context context, VolleyError error){
+    public static void showRequestError(Context context, VolleyError error){
         if (error instanceof NetworkError) {
             ToastShort(context, context.getResources().getString(R.string.txt_network_error));
         } else if (error instanceof ServerError) {

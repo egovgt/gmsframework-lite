@@ -25,9 +25,9 @@ public class BottomNavDisable {
 
                 BottomNavigationItemView item = (BottomNavigationItemView) menuView.getChildAt(i);
                 //noinspection RestrictedApi
-                item.setShiftingMode(false);
+//                item.setShiftingMode(false);
                 //noinspection RestrictedApi
-                item.setChecked(item.getItemData().isChecked());
+//                item.setChecked(item.getItemData().isChecked());
 
 
             }
